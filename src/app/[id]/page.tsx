@@ -42,7 +42,7 @@ export default function Page({ params }: { params: { id: string } }) {
   const env = process.env.NODE_ENV;
   const [loadingSubmit, setLoadingSubmit] = React.useState(false);
   const formRef = React.useRef<HTMLFormElement>(null);
-  const base64Images = useChatStore((state) => state.base64Images);
+  const base64Images = useChatStore((state) => state.base64Images);                 //image
   const setBase64Images = useChatStore((state) => state.setBase64Images);
 
   useEffect(() => {
